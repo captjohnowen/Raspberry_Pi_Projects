@@ -121,6 +121,7 @@ setInterval (currentConditions, 10000);
 /**
  * Saves paremeters to a JSON string and text file to be retreived when the 
  * webserver restarts
+ * added code for git testing
  * 
  */
 
