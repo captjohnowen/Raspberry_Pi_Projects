@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Foxgrove Server Projects">
+    <title>Foxgrove Server</title>
+    <link rel="icon" type="image/png" href="../images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+   </head>
+
+<body>
+  
+  <div class="noselect">
+  
+    
+<div class="header">
+  <h1>
+    <table class="no-spacing" cellsspacing="0" style="width: 100%;">
+    <tr>
+      <td style="width: 75%; text-align:left; border-right: 2px solid white;" rowspan="3" ><h1>Foxgrove Controls Webserver</h1></td>
+      <td colspan="3" style="text-align:center; border-bottom: 2px solid white;"><h2>Current Conditions</h2></td>
+    </tr>
+    <tr class="clickable" onclick="window.location='pages/currentWeather/currentweather.html'" scope="row">
+      <td><canvas id="mp_temp_gauge" width="200" height="200" style="vertical-align: middle; width: 200px; height: 200px"></canvas></td>
+      <td><canvas id="mp_wind_gauge" width="200" height="200" style="vertical-align: middle; width: 200px; height: 200px"></canvas></td>
+      <td><canvas id="mp_windDir_gauge" width="200" height="200" style="vertical-align: middle; width: 200px; height: 200px"></canvas></td>
+  </tr>
+  </table>
+</h1>
+</div>
+
+<div class="row">
+  <div class="col-1 col-s-1">
+    <div class="container">
+      <div class="item">
+          <h2>Temperature</h2><br>
+            <canvas id="mp_esp32Temp1_gauge" width="200" height="200" style="vertical-align: middle; width: 200px; height: 200px"></canvas>
+            <canvas id="mp_esp32Temp2_gauge" width="200" height="200" style="vertical-align: middle; width: 200px; height: 200px"></canvas>
+      </div>
+      <div class="item">
+            <id "ESP32Temp" />
+        </div>
+      <div class = "item">
+            <h3>Set Point &#40; &#8457; &#41; : <span id="esp32setpoint">%ESP32SETPOINT%</span></h3>
+            <h3> Range &#40; &#8457; &#41; : <span id="esp32range">%ESP32RANGE% </span> </h3>
+            <h3>
+              <form id = "esp32Form">
+                <input type="number" id="ESP32SetPoint" placeholder = "Enter new Set Point">
+            
+            <h3>
+                <input type="number" id="ESP32Range"  placeholder = "Enter new Range">
+                <br></br>
+                <input type="submit" id="Submit New Values" onclick = "updateESP32()">
+            </form>
+            </h3>
+        </div>
+      <div class="item">
+        <h2>GPIO 23</h2>
+        <h3><label class="switch">
+        <input type="checkbox" id="MQTT11" disabled >
+        <span class="slider"></span>
+        <span class="text"></span>
+        </label></h3>
+        <br>
+        <!--<button id="11M"></button>>-->
+        <br>
+    </div>
+  </div>
+  </div>
+  
+
+  <div class="col-1 col-s-2">
+    <div class="container">
+        <div class="item"  align= "center">
+          <h2>Avocado Tree Temperature</h2><br>
+            <canvas id="mp_avoTemp_gauge" width="200" height="200" style="width: 200px; height: 200px"></canvas>
+        </div>
+        <div class="item">
+            <id "AvoTemp" />
+        </div>
+        <div class = "item">
+            <h3>Set Point &#40; &#8457; &#41; : <span id="avosetpoint">%AVOSETPOINT%</span></h3>
+            <h3> Range &#40; &#8457; &#41; : <span id="avorange">%AVORANGE% </span> </h3>
+            <h3>
+              <form id = "avoForm">
+                <input type="number" id="AvoSetPoint" placeholder = "Enter new Set Point">
+            
+            <h3>
+                <input type="number" id="AvoRange"  placeholder = "Enter new Range">
+                <br></br>
+                <input type="submit" id="Submit New Values" onclick = "updateAvo()">
+            </form>
+            </h3>
+        </div>
+        <div class="item">
+            <h2 style="float:center">
+              <span>Avocado Output A    </span>
+              <span class="dotY" id="outADot" ></span>
+            </h2>
+            <h3>
+              <label class="switch">
+              <input type="checkbox" id="MQTT31" disabled >
+              <span class="slider"></span>
+              <span class="textmode"></span>
+            </label>
+            </h3>
+            <!--<button id="32M"></button>>-->
+        </div>
+        <div class="item">
+            <h2 style="float:center">
+              <span>Avocado Output B</span>
+              <span class="dotR" id="outBDot" ></span>
+            </h2>
+            <h3>
+            <label class="switch">
+            <input type="checkbox" id="MQTT32" disabled >
+            <span class="slider"></span>
+            <span class="textmode"></span>
+            </label>
+            </h3>
+            <!--<button id="32M"></button>>-->
+        </div>
+      </div>
+    </div>
+      
+
+    <div class="col-1 col-s-2">
+      <div class="container">
+          <div class="item"  align= "center">
+            <h2>Solar Hot Water</h2><br>
+              <canvas id="mp_colTemp_gauge" width="200" height="200" style="vertical-align: middle; width: 200px; height: 200px"></canvas>
+              <canvas id="mp_tank1Temp_gauge" width="200" height="200" style="vertical-align: middle; width: 200px; height: 200px"></canvas>
+              <canvas id="mp_tank2Temp_gauge" width="200" height="200" style="vertical-align: middle; width: 200px; height: 200px"></canvas>
+          </div>
+          <div class="item">
+              <id "SolarTemp" />
+          </div>
+          <div class = "item">
+              <h3>Set Point &#40; &#8457; &#41; : <span id="solarSetPoint">%SOLARSETPOINT%</span></h3>
+              <h3> Range &#40; &#8457; &#41; : <span id="solarRange">%SOLARRANGE% </span> </h3>
+              <h3>
+                <form id = "solarForm">
+                  <input type="number" id="SolarSetPoint" placeholder = "Enter new Set Point">
+              
+              <h3>
+                  <input type="number" id="SolarRange"  placeholder = "Enter new Range">
+                  <br></br>
+                  <input type="submit" id="Submit New Values" onclick = "updateSolar()">
+              </form>
+              </h3>
+          </div>
+          <div class="item">
+              <h2 style="float:center">
+                <span>Tank 1    </span>
+                <span class="dotY" id="solarT1Dot" ></span>
+              </h2>
+              <h3>
+                <label class="switch">
+                <input type="checkbox" id="MQTT41" disabled >
+                <span class="slider"></span>
+                <span class="textmode"></span>
+              </label>
+              </h3>
+              <!--<button id="32M"></button>>-->
+          </div>
+          <div class="item">
+              <h2 style="float:center">
+                <span>Tank 2     </span>
+                <span class="dotY" id="solarT2Dot" ></span>
+              </h2>
+              <h3>
+              <label class="switch">
+              <input type="checkbox" id="MQTT42" disabled >
+              <span class="slider"></span>
+              <span class="textmode"></span>
+              </label>
+              </h3>
+              <!--<button id="32M"></button>>-->
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+    
+  </div>
+    
+  <!-- include socket.io client side script -->
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script src="main.js"></script>
+
+  <script src="gauge.min.js"></script>
+
+</body>
+</html> 

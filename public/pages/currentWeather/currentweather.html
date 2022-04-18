@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Foxgrove Server Projects">
+    <title>Current Weather</title>
+    <link rel="icon" type="image/png" href="../images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+   </head>
+
+<body>
+  
+  <div class="noselect">
+  
+    
+<div class="header">
+  <h1>
+    <table class="no-spacing" cellsspacing="0" style="width: 100%;">
+    <tr class="clickable" onclick="window.location='../../index.html'" scope="row">
+      <td style="width: 75%; text-align:left; border-right: 2px solid white;" rowspan="3" ><h1>Current Weather Conditions</h1></td>
+      <td colspan="3" style="text-align:center; border-bottom: 2px solid white;"><h2>Return to Main Page</a></h2></td>
+    </tr>
+    </table>
+  </h1>
+</div>
+
+<div class="row">
+  <div class="col-1 col-s-1">
+    <div class="container">
+      <div class="item">
+        <h2>Temperature</h2><br>
+          <canvas id="cw_temp_gauge" width="200" height="200" style="width: 200px; height: 200px"></canvas>
+          <h3>24 Hour High: <span id="24_Temp_High">%24TEMPHIGH</span></h3>
+          <h3>24 Hour Low: <span id="24_Temp_Low">%24TEMPLOW</span></h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-1 col-s-2">
+    <div class="container">
+      <div class="item">
+        <h2>Wind</h2><br>
+          <canvas id="cw_wind_gauge" width="200" height="200" style="float:left; width: 200px; height: 200px"></canvas>
+          <canvas id="cw_windDir_gauge" width="200" height="200" style="float:right; width: 200px; height: 200px"></canvas>
+          <h3>24 Hour High: <span id="24_Wind_High">%24WINDHIGH</span></h3>
+          <h3>Time: <span id="24_Wind_High_Time">%24WINDHIGHTIME</span></h3>
+            
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-1 col-s-3">
+    <div class="container">
+      <div class="item">
+        <h2>Relative Humidity</h2><br>
+          <canvas id="cw_rh_gauge" width="200" height="200" style="width: 200px; height: 200px"></canvas>
+          <h3 style="font-family: sans-serif">24 Hour High: <span id="24_Rh_High">%24RHHIGH</span></h3>
+          <h3>24 Hour Low: <span id="24_Rh_Low">%24RHLOW</span></h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-1 col-s-3">
+  <div class="container">
+    <div class="item">
+      <h2>Barometric Pressure</h2><br>
+        <canvas id="cw_baro_gauge" width="200" height="200" style="width: 200px; height: 200px"></canvas>
+        <h3>24 Hour High: <span id="24_baro_High">%24BAROHIGH</span></h3>
+          <h3>24 Hour Low: <span id="24_baro_Low">%24BAROLOW</span></h3>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="col-1 col-s-3">
+  <div class="container">
+    <div class="item">
+      <h2>Rain</h2>
+      <canvas id="cw_rainRate_gauge" width="150" height="150" style="vertical-align: top; width: 200px; height: 200px"></canvas>
+      <canvas id="cw_rainDayTotal_gauge" width="100" height="300" style="vertical-align: middle; width: 100px; height: 300px"></canvas>
+      <canvas id="cw_rainMonthTotal_gauge" width="100" height="300" style="vertical-align: middle; width: 100px; height: 300px"></canvas>
+      <canvas id="cw_rainYearTotal_gauge" width="100" height="300" style="vertical-align: middle; width: 100px; height: 300px"></canvas>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+</div>
+    
+  <!-- include socket.io client side script -->
+  <script src="/socket.io/socket.io.js"></script>
+
+  <script src="cwMain.js"></script>
+
+  <script src="../../gauge.min.js"></script>
+
+</body>
+</html> 

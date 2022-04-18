@@ -1,0 +1,207 @@
+<?xml version="1.0"?>
+<rss version="2.0" 
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+
+
+
+  <channel>
+    <title>Weather Conditions : Foxgrove, Olive Springs, Soquel California</title>
+    <link></link>
+    <description>Current conditions, and daily, monthly, and yearly summaries</description>
+    <language>"en"</language>
+    <pubDate>Sat, 12 Feb 2022 12:51:00 PST</pubDate>
+
+    <lastBuildDate>Sat, 12 Feb 2022 12:51:00 PST</lastBuildDate>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <generator>weewx 4.6.0</generator>
+    <ttl>1.000000 minute</ttl>
+
+    <item>
+      <title>Weather Conditions at 02/12/2022 12:51:00 PM</title>
+      <link></link>
+      <description>
+        Outside Temperature: 81.1&#176;F;
+        Inside Temperature: 77.1&#176;F;
+        Barometer: 30.127 inHg;
+        Rain: 0.00 in;
+        Rain Rate: 0.00 in/h;
+        Wind Chill: 81.1&#176;F;
+        Heat Index: 79.0&#176;F;
+        Dew Point: 27.4&#176;F;
+        Outside Humidity: 14%;
+        Inside Humidity: 32%;
+      </description>
+      <pubDate>Sat, 12 Feb 2022 12:51:00 PST</pubDate>
+      <geo:lat>37.059923</geo:lat>
+      <geo:long>-121.927871</geo:long>
+      <content:encoded><![CDATA[
+      <p>
+      Time: 02/12/2022 12:51:00 PM<br/>
+        Outside Temperature: 81.1&#176;F<br/>
+        Inside Temperature: 77.1&#176;F<br/>
+        Barometer: 30.127 inHg<br/>
+        Rain: 0.00 in<br/>
+        Rain Rate: 0.00 in/h<br/>
+        Wind Chill: 81.1&#176;F<br/>
+        Heat Index: 79.0&#176;F<br/>
+        Dew Point: 27.4&#176;F<br/>
+        Outside Humidity: 14%<br/>
+        Inside Humidity: 32%<br/>
+      </p>
+      ]]></content:encoded>
+    </item>
+
+    <item>
+      <title>Daily summary as of 02/12/2022 12:51:00 PM</title>
+      <link></link>
+      <description>
+        Min Outside Temperature: 51.4&#176;F at 05:26:00 AM;
+        Max Outside Temperature: 82.0&#176;F at 12:47:00 PM;
+        Min Inside Temperature: 74.1&#176;F at 08:22:00 AM;
+        Max Inside Temperature: 77.4&#176;F at 12:01:00 AM;
+        Min Barometer: 30.062 inHg at 04:16:00 AM;
+        Max Barometer: 30.158 inHg at 10:34:00 AM;
+        Rain: 0.00 in;
+        Max Rain Rate: 0.00 in/h;
+        Min Wind Chill: 51.4&#176;F at 05:26:00 AM;
+        Max Wind Chill: 82.0&#176;F at 12:47:00 PM;
+        Min Heat Index: 48.7&#176;F at 05:26:00 AM;
+        Max Heat Index: 79.6&#176;F at 12:45:51 PM;
+        Min Dew Point: 21.7&#176;F at 12:43:28 PM;
+        Max Dew Point: 46.4&#176;F at 10:33:00 AM;
+        Min Outside Humidity: 11% at 12:25:50 PM;
+        Max Outside Humidity: 54% at 02:38:00 AM;
+        Min Inside Humidity: 30% at 03:19:00 AM;
+        Max Inside Humidity: 32% at 12:39:00 PM;
+      </description>
+      <pubDate>Sat, 12 Feb 2022 12:51:00 PST</pubDate>
+      <geo:lat>37.059923</geo:lat>
+      <geo:long>-121.927871</geo:long>
+      <content:encoded><![CDATA[
+      <p>
+      Daily summary as of 12 Feb 2022<br/>
+        Min Outside Temperature: 51.4&#176;F at 05:26:00 AM<br/>
+        Max Outside Temperature: 82.0&#176;F at 12:47:00 PM<br/>
+        Min Inside Temperature: 74.1&#176;F at 08:22:00 AM<br/>
+        Max Inside Temperature: 77.4&#176;F at 12:01:00 AM<br/>
+        Min Barometer: 30.062 inHg at 04:16:00 AM<br/>
+        Max Barometer: 30.158 inHg at 10:34:00 AM<br/>
+        Rain: 0.00 in<br/>
+        Max Rain Rate: 0.00 in/h<br/>
+        Min Wind Chill: 51.4&#176;F at 05:26:00 AM<br/>
+        Max Wind Chill: 82.0&#176;F at 12:47:00 PM<br/>
+        Min Heat Index: 48.7&#176;F at 05:26:00 AM<br/>
+        Max Heat Index: 79.6&#176;F at 12:45:51 PM<br/>
+        Min Dew Point: 21.7&#176;F at 12:43:28 PM<br/>
+        Max Dew Point: 46.4&#176;F at 10:33:00 AM<br/>
+        Min Outside Humidity: 11% at 12:25:50 PM<br/>
+        Max Outside Humidity: 54% at 02:38:00 AM<br/>
+        Min Inside Humidity: 30% at 03:19:00 AM<br/>
+        Max Inside Humidity: 32% at 12:39:00 PM<br/>
+      </p>
+      ]]></content:encoded>
+    </item>
+    <item>
+      <title>Monthly summary as of 02/12/2022 12:51:00 PM</title>
+      <link></link>
+      <description>
+        Min Outside Temperature: 48.6&#176;F at 02/09/2022 05:14:00 AM;
+        Max Outside Temperature: 83.2&#176;F at 02/10/2022 01:06:00 PM;
+        Min Inside Temperature: 70.6&#176;F at 02/09/2022 08:19:00 AM;
+        Max Inside Temperature: 79.7&#176;F at 02/11/2022 04:39:00 PM;
+        Min Barometer: 30.020 inHg at 02/11/2022 02:50:00 PM;
+        Max Barometer: 30.238 inHg at 02/08/2022 11:00:00 PM;
+        Rain: 0.00 in;
+        Max Rain Rate: 0.00 in/h;
+        Min Wind Chill: 48.6&#176;F at 02/09/2022 05:14:00 AM;
+        Max Wind Chill: 83.2&#176;F at 02/10/2022 01:06:00 PM;
+        Min Heat Index: 45.4&#176;F at 02/09/2022 05:14:00 AM;
+        Max Heat Index: 80.5&#176;F at 02/10/2022 01:06:00 PM;
+        Min Dew Point: 21.7&#176;F at 02/12/2022 12:43:28 PM;
+        Max Dew Point: 46.4&#176;F at 02/12/2022 10:33:00 AM;
+        Min Outside Humidity: 11% at 02/12/2022 12:25:50 PM;
+        Max Outside Humidity: 54% at 02/12/2022 02:38:00 AM;
+        Min Inside Humidity: 30% at 02/08/2022 09:43:00 PM;
+        Max Inside Humidity: 33% at 02/10/2022 04:29:00 PM;
+      </description>
+      <pubDate>Sat, 12 Feb 2022 12:51:00 PST</pubDate>
+      <geo:lat>37.059923</geo:lat>
+      <geo:long>-121.927871</geo:long>
+      <content:encoded><![CDATA[
+      <p>
+      Monthly summary as of 01 Feb 2022<br/>
+        Min Outside Temperature: 48.6&#176;F at 02/09/2022 05:14:00 AM<br/>
+        Max Outside Temperature: 83.2&#176;F at 02/10/2022 01:06:00 PM<br/>
+        Min Inside Temperature: 70.6&#176;F at 02/09/2022 08:19:00 AM<br/>
+        Max Inside Temperature: 79.7&#176;F at 02/11/2022 04:39:00 PM<br/>
+        Min Barometer: 30.020 inHg at 02/11/2022 02:50:00 PM<br/>
+        Max Barometer: 30.238 inHg at 02/08/2022 11:00:00 PM<br/>
+        Rain: 0.00 in<br/>
+        Max Rain Rate: 0.00 in/h<br/>
+        Min Wind Chill: 48.6&#176;F at 02/09/2022 05:14:00 AM<br/>
+        Max Wind Chill: 83.2&#176;F at 02/10/2022 01:06:00 PM<br/>
+        Min Heat Index: 45.4&#176;F at 02/09/2022 05:14:00 AM<br/>
+        Max Heat Index: 80.5&#176;F at 02/10/2022 01:06:00 PM<br/>
+        Min Dew Point: 21.7&#176;F at 02/12/2022 12:43:28 PM<br/>
+        Max Dew Point: 46.4&#176;F at 02/12/2022 10:33:00 AM<br/>
+        Min Outside Humidity: 11% at 02/12/2022 12:25:50 PM<br/>
+        Max Outside Humidity: 54% at 02/12/2022 02:38:00 AM<br/>
+        Min Inside Humidity: 30% at 02/08/2022 09:43:00 PM<br/>
+        Max Inside Humidity: 33% at 02/10/2022 04:29:00 PM<br/>
+      </p>
+      ]]></content:encoded>
+    </item>
+    <item>
+      <title>Yearly summary as of 02/12/2022 12:51:00 PM</title>
+      <link></link>
+      <description>
+        Min Outside Temperature: 48.6&#176;F at 02/09/2022 05:14:00 AM;
+        Max Outside Temperature: 83.2&#176;F at 02/10/2022 01:06:00 PM;
+        Min Inside Temperature: 70.6&#176;F at 02/09/2022 08:19:00 AM;
+        Max Inside Temperature: 79.7&#176;F at 02/11/2022 04:39:00 PM;
+        Min Barometer: 30.020 inHg at 02/11/2022 02:50:00 PM;
+        Max Barometer: 30.238 inHg at 02/08/2022 11:00:00 PM;
+        Rain: 0.00 in;
+        Max Rain Rate: 0.00 in/h;
+        Min Wind Chill: 48.6&#176;F at 02/09/2022 05:14:00 AM;
+        Max Wind Chill: 83.2&#176;F at 02/10/2022 01:06:00 PM;
+        Min Heat Index: 45.4&#176;F at 02/09/2022 05:14:00 AM;
+        Max Heat Index: 80.5&#176;F at 02/10/2022 01:06:00 PM;
+        Min Dew Point: 21.7&#176;F at 02/12/2022 12:43:28 PM;
+        Max Dew Point: 46.4&#176;F at 02/12/2022 10:33:00 AM;
+        Min Outside Humidity: 11% at 02/12/2022 12:25:50 PM;
+        Max Outside Humidity: 54% at 02/12/2022 02:38:00 AM;
+        Min Inside Humidity: 30% at 02/08/2022 09:43:00 PM;
+        Max Inside Humidity: 33% at 02/10/2022 04:29:00 PM;
+      </description>
+      <pubDate>Sat, 12 Feb 2022 12:51:00 PST</pubDate>
+      <geo:lat>37.059923</geo:lat>
+      <geo:long>-121.927871</geo:long>
+      <content:encoded><![CDATA[
+      <p>
+      Yearly summary as of 01 Jan 2022<br/>
+        Min Outside Temperature: 48.6&#176;F at 02/09/2022 05:14:00 AM<br/>
+        Max Outside Temperature: 83.2&#176;F at 02/10/2022 01:06:00 PM<br/>
+        Min Inside Temperature: 70.6&#176;F at 02/09/2022 08:19:00 AM<br/>
+        Max Inside Temperature: 79.7&#176;F at 02/11/2022 04:39:00 PM<br/>
+        Min Barometer: 30.020 inHg at 02/11/2022 02:50:00 PM<br/>
+        Max Barometer: 30.238 inHg at 02/08/2022 11:00:00 PM<br/>
+        Rain: 0.00 in<br/>
+        Max Rain Rate: 0.00 in/h<br/>
+        Min Wind Chill: 48.6&#176;F at 02/09/2022 05:14:00 AM<br/>
+        Max Wind Chill: 83.2&#176;F at 02/10/2022 01:06:00 PM<br/>
+        Min Heat Index: 45.4&#176;F at 02/09/2022 05:14:00 AM<br/>
+        Max Heat Index: 80.5&#176;F at 02/10/2022 01:06:00 PM<br/>
+        Min Dew Point: 21.7&#176;F at 02/12/2022 12:43:28 PM<br/>
+        Max Dew Point: 46.4&#176;F at 02/12/2022 10:33:00 AM<br/>
+        Min Outside Humidity: 11% at 02/12/2022 12:25:50 PM<br/>
+        Max Outside Humidity: 54% at 02/12/2022 02:38:00 AM<br/>
+        Min Inside Humidity: 30% at 02/08/2022 09:43:00 PM<br/>
+        Max Inside Humidity: 33% at 02/10/2022 04:29:00 PM<br/>
+      </p>
+      ]]></content:encoded>
+    </item>
+
+  </channel>
+</rss>
